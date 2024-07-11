@@ -1,0 +1,22 @@
+{
+  "name": "sudokusol",
+  "version": "1.0.0",
+  "description": "A web application for a sudoku solver visualizer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  
+
+  "author": "Priyanshu",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.21"
+  }
+}

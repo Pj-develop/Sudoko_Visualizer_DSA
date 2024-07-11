@@ -1,0 +1,173 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #eff1e3;
+    margin: 0;
+    height: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+table {
+    border: 5px solid #000000;
+    border-collapse: collapse;
+}
+
+td {
+    font-size: 1.8em;
+    text-align: center;
+    border: 1px solid #000000;
+    width: 45px;
+    height: 45px;
+    caret-color: #000000;
+}
+
+td:hover {
+    background-color: #ddd;
+}
+
+.focused-cell {
+    background-color: #ddd;
+}
+
+td.discovered-num {
+    color: #ff0000;
+}
+
+td.box-boundary-row {
+    border-bottom: 3px solid #000000;
+}
+
+td.box-boundary-col {
+    border-right: 3px solid #000000;
+}
+
+td.status-success {
+    color: #16a516;
+}
+
+.status-success {
+    color: #16a516;
+}
+
+.status-failed {
+    color: #ff0000;
+}
+
+/* Title, slider, buttons, status, and instructions */
+.options {
+    padding-top: 1em;
+}
+
+.main-buttons {
+    margin-right: 2em;
+    transition: background-color 0.25s transform 0.25s;
+}
+
+.main-buttons:hover {
+    background-color: rgb(83, 79, 79);
+    transform: translateY(-0.1em);
+}
+
+.title-row {
+    justify-self: center;
+} 
+
+.board-row {
+    margin-top: 1em;
+}
+
+.slider-row {
+    margin-top: 1em;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 60%;
+    height: 12px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: #7e281d;
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #7e281d;
+    cursor: pointer;
+}
+
+.buttons-row {
+    margin-top: 1em;
+}
+.status-row {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.instructions {
+    padding-right: 0.5em;
+    background-color: rgb(209, 181, 144);
+}
+
+footer {
+    padding: 1em 0;
+}
+
+#footer-text {
+    background-color: rgb(24, 23, 23);
+}
+
+/* On large resolution screens, space the content from the footer to rid whitespace from under footer */
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+/* At any screen smaller than boostrap's lg breakpoint, make page content more centered */
+@media (max-width: 992px) { 
+    #sudoku {
+        margin: 0 auto;
+    }
+    .title-row {
+        text-align: center; 
+    }
+    .slider-row {
+        text-align: center;
+    }
+    .buttons-row {
+        text-align: center;
+    }
+}
